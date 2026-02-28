@@ -3353,6 +3353,356 @@ export const resources: Resource[] = [
     category: 'getting-started',
     tags: ['2026入门', '社区生态', '自主Agent', '功能概览'],
   },
+
+  // ============ New — Week of 2026-02-26 ============
+
+  // -- Deep Dive (Security - Critical) --
+  {
+    title: 'Trend Micro — 恶意 OpenClaw Skills 传播 Atomic macOS Stealer',
+    desc: 'Trend Micro 威胁研究：39 个恶意 ClawHub 技能伪装成合法 CLI 工具，实为 Atomic macOS Stealer，受害者 SSH 密钥、浏览器密码和加密钱包遭窃',
+    url: 'https://www.trendmicro.com/en_us/research/26/b/openclaw-skills-used-to-distribute-atomic-macos-stealer.html',
+    source: 'Trend Micro',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['Trend Micro', '安全', 'Atomic Stealer', 'macOS', '恶意技能'],
+  },
+  {
+    title: 'Awesome Agents — ClawHub #1 技能竟是恶意软件：供应链攻击全内幕',
+    desc: '深度调查：1,184 个恶意技能窃取 SSH Key、加密钱包和浏览器密码，单个攻击者上传 677 个恶意包，ClawHub 供应链攻击完整时间线',
+    url: 'https://awesomeagents.ai/news/openclaw-clawhub-malware-supply-chain/',
+    source: 'Awesome Agents',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['供应链攻击', '1184恶意包', 'SSH密钥', '加密钱包', '必读'],
+  },
+  {
+    title: 'OpenClaw Review 2026: Can This Viral AI Agent Actually Make You Money?',
+    desc: '全面综述评测：从 Clawdbot 到 OpenClaw 的混乱历史、386 个恶意技能事件、Trend Micro/Bitsight 安全报告梳理，以及真实商业变现可行性分析',
+    url: 'https://marksinsights.com/openclaw/',
+    source: "Mark's Insights",
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['评测', '商业变现', '安全历史', '综合分析'],
+  },
+  {
+    title: 'DEV Community — AI Agents 终极指南 2026：OpenClaw vs Claude Cowork vs Claude Code',
+    desc: '三大 AI Agent 平台深度横评：持续记忆与主动性、技能扩展、MCP 集成，帮助开发者在不同场景下选择正确的 Agent 框架',
+    url: 'https://dev.to/tech_croc_f32fbb6ea8ed4/the-ultimate-guide-to-ai-agents-in-2026-openclaw-vs-claude-cowork-vs-claude-code-395h',
+    source: 'DEV Community',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['Agent对比', 'Claude Code', '框架选型', '2026', 'DEV'],
+  },
+
+  // -- Skill Dev --
+  {
+    title: 'Apiyi — ClawHub.ai 解码：220K Stars 开源 Agent 的 3000+ 技能注册表深度指南',
+    desc: 'ClawHub.ai 生态全景：技能分类体系、安全安装原则、2026 年热门精选技能推荐，以及 Steinberger 加入 OpenAI 后基金会维护路线图',
+    url: 'https://help.apiyi.com/en/clawhub-ai-openclaw-skills-registry-guide-en.html',
+    source: 'Apiyi',
+    lang: 'en',
+    category: 'skill-dev',
+    featured: true,
+    tags: ['ClawHub', '3000+技能', '安全安装', '生态全景', '220K Stars'],
+  },
+
+  // -- Official (Version Tracking) --
+  {
+    title: 'Releasebot — OpenClaw 发版追踪：2026 年 2 月更新日志',
+    desc: 'v2026.2.23/2026.2.24 自动更新追踪：openclaw update --dry-run 预览命令、内置自动更新器（update.auto. 默认关闭）、多语言停止指令扩展（ZH/JP/AR 等）',
+    url: 'https://releasebot.io/updates/openclaw',
+    source: 'Releasebot',
+    lang: 'en',
+    category: 'official',
+    tags: ['版本追踪', 'v2026.2.24', '自动更新', '多语言'],
+  },
+
+  // -- Getting Started --
+  {
+    title: 'NRI Globe — How to Use OpenClaw as Your Personal AI Assistant: Ultimate 2026 Guide',
+    desc: '2026 全面使用指南：安装配置、功能介绍、自动化使用技巧和真实用例，面向希望打造 24/7 个人 AI 助手的普通用户',
+    url: 'https://nriglobe.com/tech-news/how-to-use-openclaw-personal-ai-assistant-2026/',
+    source: 'NRI Globe',
+    lang: 'en',
+    category: 'getting-started',
+    tags: ['完整指南', '24/7助手', '使用技巧', '2026'],
+  },
+  {
+    title: 'OpenClaw Index — Claude Opus 4.6 大升级：ClawdBot 与 Claude Code 完整指南',
+    desc: 'Claude Opus 4.6 在 ClawdBot 和 Claude Code 中的增强规划能力、Agentic 编码改进，含完整设置指南和进阶 AI 开发工作流',
+    url: 'https://openclawindex.com/learn/claude-opus-46-is-a-massive-upgrade-for-clawdbot-and-claude-code-full-guide',
+    source: 'OpenClaw Index',
+    lang: 'en',
+    category: 'getting-started',
+    tags: ['Claude Opus 4.6', 'Claude Code', 'Agentic编码', '进阶'],
+  },
+
+  // -- Use Cases --
+  {
+    title: 'Reddit — Full Tutorial: How to Build an OpenClaw Business That Makes $4,000 a Week',
+    desc: 'Reddit r/ArtificialInteligence 热门帖：Nat Eliason 35 分钟完整教程，从 Agent 设置到构建每周 $4000 收入的 OpenClaw 自动化业务，真实可操作',
+    url: 'https://www.reddit.com/r/ArtificialInteligence/comments/1rbp25j/full_tutorial_how_to_build_an_openclaw_business/',
+    source: 'Reddit',
+    lang: 'en',
+    category: 'use-cases',
+    featured: true,
+    tags: ['Reddit', '商业变现', '$4000/周', 'Nat Eliason', '实战'],
+  },
+
+  // -- Video (This Week) --
+  {
+    title: 'YouTube — How to Create Multiple Agents in Clawdbot（2026 Tutorial）',
+    desc: '多 Agent 创建全流程：openclaw agents add、openclaw configure 命令详解，附完整 SOP 文档和 GitHub 模板下载',
+    url: 'https://www.youtube.com/watch?v=EMBNyWVsEXc',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '多Agent', 'SOP文档', '2026最新'],
+  },
+  {
+    title: 'YouTube — SECURE OpenClaw Setup Guide（ClawdBot Tutorial）',
+    desc: 'Hostinger VPS + Docker 安全部署教程：Gateway 安全配置、API 支出限制、权限控制，这是你安装 OpenClaw 前必看的安全版指南',
+    url: 'https://www.youtube.com/watch?v=YCD2FSvj35I',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '安全部署', 'Docker', 'Hostinger', '必看'],
+  },
+  {
+    title: 'YouTube — How I Setup My ClawdBot as a Professional Developer（Insanely Powerful）',
+    desc: 'Tech With Tim 专业开发者视角：如何把 OpenClaw 打造成极其强大的开发辅助系统，boot.dev 赞助，含完整配置思路',
+    url: 'https://www.youtube.com/watch?v=NO-bOryZoTE',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', 'Tech With Tim', '专业开发者', '开发配置'],
+  },
+  {
+    title: 'YouTube — ClawdBot Beginner Guide 2026：完整安装 + Telegram & WhatsApp 集成',
+    desc: '想在自己的笔记本上打造 JARVIS？完整 ClawdBot (OpenClaw) 入门教程：分步安装、Telegram/WhatsApp 双平台接入，适合零基础新手',
+    url: 'https://www.youtube.com/watch?v=Glz-QQOOWXw',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', 'JARVIS', 'Telegram', 'WhatsApp', '零基础'],
+  },
+  {
+    title: 'YouTube — OpenClaw Full Tutorial for Beginners: How to Setup Your First AI Agent',
+    desc: '全流程入门视频：从零开始完整安装 OpenClaw，涵盖专属设备部署、Telegram Bot 配置、Open Router 模型接入，适合 Agent 新手',
+    url: 'https://www.youtube.com/watch?v=BoC5MY_7aDk',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', '第一个Agent', 'OpenRouter', 'Telegram Bot'],
+  },
+
+  // ============ New — Week of 2026-02-27 ============
+
+  // -- Official (v2026.2.24 Newsletter) --
+  {
+    title: 'OpenClaw Newsletter — 2026-02-25（v2026.2.24：多语言停止指令 + 226K Stars）',
+    desc: '官方周刊：v2026.2.24 扩展自动停止短语（支持 ES/FR/ZH/HI/AR/JP/DE/PT/RU 多语言），新增 `do not do that` 作为停止触发词；Homebrew 30 天内 3,284 次安装，仓库突破 226,887 Stars',
+    url: 'https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-02-25/',
+    source: 'OpenClaw Newsletter',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['官方周刊', 'v2026.2.24', '多语言', '226K Stars'],
+  },
+
+  // -- Getting Started --
+  {
+    title: 'DEV Community — What is OpenClaw AI in 2026? A Practical Guide for Developers',
+    desc: 'OpenClaw 自托管 AI Agent 实用开发者指南：执行真实操作（文件、API、Telegram 等），全面覆盖安装、技能开发和安全配置',
+    url: 'https://dev.to/laracopilot/what-is-openclaw-ai-in-2026-a-practical-guide-for-developers-25hj',
+    source: 'DEV Community',
+    lang: 'en',
+    category: 'getting-started',
+    tags: ['DEV', '开发者', '自托管', '实用指南', '2026'],
+  },
+  {
+    title: 'Medium — Understanding OpenClaw: Self-Hosted AI Agents on Cloud Infrastructure',
+    desc: '云基础设施上的 OpenClaw 自托管指南：Ubuntu 22.04 实例部署、Node.js 18+ 安装、API Key 配置，以及安全组和 SSH 密钥管理',
+    url: 'https://medium.com/@alexrozdolskiy/understanding-openclaw-self-hosted-ai-agents-on-cloud-infrastructure-28d28e4078f3',
+    source: 'Medium',
+    lang: 'en',
+    category: 'getting-started',
+    tags: ['Medium', 'Ubuntu', '云部署', 'Node.js', '安全组'],
+  },
+
+  // -- Use Cases (Automation / Money-making) --
+  {
+    title: 'Medium — 33 OpenClaw Automations That Make Money (2026 Guide)',
+    desc: '33 个已测试的 OpenClaw 自动化方案，可在 30 分钟内配置完成并开始创收：收入生成、生产力提升、监控和业务工作流全覆盖',
+    url: 'https://medium.com/@rentierdigital/33-openclaw-automations-you-can-set-up-in-30-minutes-that-start-making-you-money-tonight-f8c3b8a402f1',
+    source: 'Medium',
+    lang: 'en',
+    category: 'use-cases',
+    featured: true,
+    tags: ['Medium', '33自动化', '创收', '30分钟', '实战'],
+  },
+  {
+    title: 'Medium — 21 Advanced OpenClaw Automations for Developers (2026)',
+    desc: '进阶自动化方案：基础教程不提的 21 个玩法，n8n + Convex + Supabase 集成，在真实 VPS 上实测的时间节省数据',
+    url: 'https://medium.com/@rentierdigital/21-openclaw-automations-nobody-talks-about-because-the-obvious-ones-already-broke-the-internet-3f881b9e0018',
+    source: 'Medium',
+    lang: 'en',
+    category: 'use-cases',
+    tags: ['Medium', '21进阶自动化', 'n8n', 'Convex', 'Supabase', 'VPS'],
+  },
+  {
+    title: 'Medium — OpenClaw with Free LLM: What Actually Works in 2026',
+    desc: '免费/廉价 LLM 接入 OpenClaw 实测：Ollama、Groq、Mistral、OpenRouter，哪个能用、哪个崩掉，附最佳预算方案建议',
+    url: 'https://medium.com/@rentierdigital/i-tried-running-clawdbot-with-a-free-llm-heres-what-happened-2b5d80cbf7f5',
+    source: 'Medium',
+    lang: 'en',
+    category: 'use-cases',
+    tags: ['Medium', '免费LLM', 'Ollama', 'Groq', 'OpenRouter', '预算方案'],
+  },
+
+  // ============ New — Week of 2026-02-28 ============
+
+  // -- Official (v2026.2.25 / v2026.2.26) --
+  {
+    title: 'Reddit r/myclaw — OpenClaw v2026.2.25 正式发布',
+    desc: 'v2026.2.25 关键更新：Heartbeat DM 投递恢复、子 Agent 投递全面重构、Slack 线程会话修复、跨频道 Reaction 认证加固',
+    url: 'https://www.reddit.com/r/myclaw/comments/1rf4zr0/openclaw_just_launched_v2026225/',
+    source: 'Reddit',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['v2026.2.25', 'Heartbeat', '子Agent', 'Slack', 'Reaction', '版本追踪'],
+  },
+  {
+    title: 'PatchBot — OpenClaw 补丁说明（含 v2026.2.26 External Secrets Management）',
+    desc: 'v2026.2.26 重大新功能：External Secrets Management 完整工作流（audit/configure/apply/reload），运行时快照激活、严格 target-path 验证、安全迁移清洗',
+    url: 'https://patchbot.io/ai/openclaw',
+    source: 'PatchBot',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['v2026.2.26', 'External Secrets', '安全', '版本追踪'],
+  },
+  {
+    title: 'Software Mirrors — OpenClaw 2026.2.26（版本信息与下载）',
+    desc: '第三方软件镜像站收录最新 OpenClaw 2026.2.26，含版本历史和下载链接，便于追踪版本更新',
+    url: 'https://www.software-mirrors.com/products/openclaw-formerly-moltbot-clawd-bot',
+    source: 'Software Mirrors',
+    lang: 'en',
+    category: 'official',
+    tags: ['v2026.2.26', '版本追踪', '下载镜像'],
+  },
+
+  // -- Deep Dive (Security) --
+  {
+    title: 'Cryptika — OpenClaw 2026.2.23 发布：安全加固与 AI 新特性',
+    desc: 'Cryptika 网络安全媒体报道：215K+ Stars 的 OpenClaw 发布 v2026.2.23，SSRF 防护升级、Claude Opus 4.6 接入，breaking change 详解和升级指南',
+    url: 'https://www.cryptika.com/openclaw-releases-2026-2-23-released-with-security-updates-and-new-ai-features/',
+    source: 'Cryptika',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['v2026.2.23', '安全', 'SSRF', 'Cryptika', 'Claude Opus 4.6'],
+  },
+
+  // -- Video (Latest) --
+  {
+    title: 'YouTube — OpenClaw / ClawdBot Tutorial for Beginners | Setup in 10 Minutes',
+    desc: 'Hostinger 一键安装器快速上手教程：从申请 Bot Token 到第一次对话，全程 10 分钟完成 OpenClaw 部署',
+    url: 'https://www.youtube.com/watch?v=OU63DGuEggg',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '10分钟', 'Hostinger', '入门', '最新'],
+  },
+  {
+    title: 'YouTube — Your Clawdbot Broke? Watch This to Fix It（2026 故障排除）',
+    desc: 'Skool 社区出品：OpenClaw 常见故障全解决，含 Claude Code 配置修复，附终端命令速查和 GitHub 模板，是装完跑不起来时的第一选择',
+    url: 'https://www.youtube.com/watch?v=pmbftRnW4Yc',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '故障排除', '修复', 'Skool', '2026最新'],
+  },
+
+  // ============ New — Week of 2026-03-01 ============
+
+  // -- Video --
+  {
+    title: 'YouTube — OpenClaw: Complete Beginners Guide! (2026)',
+    desc: '完整初学者指南，含 AI 提示词模板和商业转化实战配置，适合从零开始搭建 24/7 AI 助手',
+    url: 'https://www.youtube.com/watch?v=BI034QtdmTo',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '初学者', '2026', '完整教程'],
+  },
+  {
+    title: 'YouTube — The Ultimate Beginners Guide To OpenClaw Setup!',
+    desc: '家庭自动化视角的 OpenClaw 入门：如何用 OpenClaw 实现生活自动化，改变日常生活的完整上手指南',
+    url: 'https://www.youtube.com/watch?v=Qtoum-9SJ9g',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', '家庭自动化', '生活自动化', '入门'],
+  },
+  {
+    title: 'YouTube — Setup OpenClaw with Ollama on Ubuntu (Zero API Cost 2026)',
+    desc: '完全免费方案：Ubuntu Linux 上接入 Ollama 本地模型运行 OpenClaw，零 API 费用，含完整步骤演示',
+    url: 'https://www.youtube.com/watch?v=_dzz5sJe-Ug',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', 'Ollama', 'Ubuntu', '免费', '本地模型', '最新'],
+  },
+  {
+    title: 'YouTube — The EASIEST & SAFEST Way to Set Up OpenClaw For Beginners (2026)',
+    desc: 'MyClaw.ai 托管方案介绍：史上最简单且安全的 OpenClaw 部署方式，无需 VPS 或技术基础，适合完全新手',
+    url: 'https://www.youtube.com/watch?v=LiyR2C6smjo',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', 'MyClaw', '托管', '最简单', '安全', '新手'],
+  },
+
+  // -- Deep Dive --
+  {
+    title: 'Vectra AI — From Clawdbot to OpenClaw: When Automation Becomes a Digital Backdoor',
+    desc: 'Vectra AI 安全研究：Clawdbot → Moltbot → OpenClaw 演化轨迹深度分析，AI Agent 自动化如何成为潜在攻击面',
+    url: 'https://www.vectra.ai/blog/clawdbot-to-moltbot-to-openclaw-when-automation-becomes-a-digital-backdoor',
+    source: 'Vectra AI',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['Vectra AI', '安全分析', '攻击面', '演化历史'],
+  },
+  {
+    title: 'Context Studios — The Complete OpenClaw Guide: Running an AI Agent in Production (2026)',
+    desc: '生产环境实战全记录：从安装配置到多 Agent 工作流、浏览器自动化和 134 个 MCP 工具的完整运营指南',
+    url: 'https://www.contextstudios.ai/blog/the-complete-openclaw-guide-how-we-run-an-ai-agent-in-production-2026',
+    source: 'Context Studios',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['生产环境', 'MCP', '多Agent', '浏览器自动化', '实战'],
+  },
+  {
+    title: 'Medium — From Clawdbot to OpenAI: What the OpenClaw Story Actually Tells Us',
+    desc: '亲历者回顾：Clawdbot 爆火、品牌混乱、Steinberger 加入 OpenAI 的全过程，从社区视角理解 OpenClaw 这段历史的深层意义',
+    url: 'https://medium.com/@cdcore/from-clawdbot-to-openai-what-the-openclaw-story-actually-tells-us-79e3d034f227',
+    source: 'Medium',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['Medium', '历史回顾', '品牌演变', 'OpenAI', '社区视角'],
+  },
 ];
 
 export function getResourcesByCategory(cat: ResourceCategory): Resource[] {
