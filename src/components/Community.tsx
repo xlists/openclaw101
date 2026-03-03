@@ -247,7 +247,7 @@ export default function Community({ locale, dict }: CommunityProps) {
                 <img
                   src="/images/video-course-qr.jpg"
                   alt="视频课二维码"
-                  className="w-40 sm:w-48 md:w-56 rounded-lg border-2 border-white/20 mx-auto"
+                  className="w-52 sm:w-64 md:w-72 lg:w-80 rounded-lg border-2 border-white/20 mx-auto"
                 />
                 <p className="text-white/60 text-xs mt-2">扫码查看课程详情</p>
               </div>
