@@ -25,16 +25,6 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
     setMounted(true);
   }, []);
   
-  const titles: Record<number, { en: string; zh: string }> = {
-    1: { en: 'Getting Started with OpenClaw', zh: '初识 OpenClaw' },
-    2: { en: 'Deep Conversations', zh: '深入对话' },
-    3: { en: 'Files & Code', zh: '文件与代码' },
-    4: { en: 'Web Capabilities', zh: '网络能力' },
-    5: { en: 'Skill Extensions', zh: '技能扩展' },
-    6: { en: 'Automation', zh: '自动化' },
-    7: { en: 'Advanced Techniques', zh: '高级技巧' },
-  };
-  
   const t = locale === 'zh' ? {
     day: '第',
     dayUnit: '天',
@@ -87,7 +77,7 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
             {locale === 'zh' ? `${t.day} ${day} ${t.dayUnit}` : `${t.day} ${day}`}
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {titles[day]?.[locale] || frontmatter.title}
+            {frontmatter.title}
           </h1>
           <p className="text-xl text-gray-400">
             {frontmatter.description}

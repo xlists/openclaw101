@@ -1,7 +1,7 @@
 ---
-title: "Day 5: 解锁技能树"
+title: "第 5 天：解锁技能树"
 day: 5
-description: "OpenClaw 7天教程 - Day 5: 解锁技能树"
+description: "OpenClaw 7天教程 - 第 5 天：解锁技能树"
 ---
 
 > *"如果说 Day 4 是给助手接上了手，那今天就是给它发了一整箱工具。螺丝刀、扳手、电钻……用哪个取哪个，用完放回去。这就是 Skills 系统。"*

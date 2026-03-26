@@ -1,56 +1,151 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import HomePage from '@/components/HomePage';
+import {
+  SITE_NAME,
+  SITE_URL,
+  buildPageMetadata,
+  getStructuredDataLanguage,
+} from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: '7天掌握你的AI私人助理',
-  description: '从零开始，7天掌握你的AI私人助理。教程、技能和社区资源一站式获取。',
-  alternates: {
-    canonical: 'https://openclaw101.dev/zh',
-    languages: {
-      'en': 'https://openclaw101.dev',
-      'zh': 'https://openclaw101.dev/zh',
-    },
-  },
-  openGraph: {
-    title: 'OpenClaw 101 - 从零开始，7天掌握你的AI私人助理',
-    description: '从零开始，7天掌握你的AI私人助理',
-    type: 'website',
-    url: 'https://openclaw101.dev/zh',
-    siteName: 'OpenClaw 101',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'OpenClaw 101 - 从零开始，7天掌握你的AI私人助理',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'OpenClaw 101 - 从零开始，7天掌握你的AI私人助理',
-    description: '从零开始，7天掌握你的AI私人助理',
-    images: ['/og-image.png'],
-  },
-};
+  description:
+    '从零开始，7天掌握你的 OpenClaw AI 私人助理。包含安装、配置、技能、自动化与精选资源的一站式教程。',
+  locale: 'zh',
+  enPath: '/',
+  zhPath: '/zh',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'OpenClaw 101',
-  url: 'https://openclaw101.dev/zh',
-  description: '从零开始，7天掌握你的AI私人助理',
-  inLanguage: 'zh-CN',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/zh#website`,
+      url: `${SITE_URL}/zh`,
+      name: SITE_NAME,
+      description: '从零开始，7天掌握你的 AI 私人助理。',
+      inLanguage: getStructuredDataLanguage('zh'),
+    },
+    {
+      '@type': 'Course',
+      '@id': `${SITE_URL}/zh#course`,
+      url: `${SITE_URL}/zh`,
+      name: 'OpenClaw 7天教程',
+      description: '7天循序渐进学习 OpenClaw 的安装、配置、技能、接入与自动化。',
+      provider: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+      hasCourseInstance: {
+        '@type': 'CourseInstance',
+        courseMode: 'online',
+        courseWorkload: 'P7D',
+      },
+      numberOfLessons: 7,
+      isAccessibleForFree: true,
+      availableLanguage: ['zh-CN', 'en'],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}/zh#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'OpenClaw 是什么？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'OpenClaw 是一个开源 AI Agent 框架，你可以把它部署到自己的电脑或服务器上，打造能聊天、调用工具、执行自动化任务的私人 AI 助手。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'OpenClaw 免费吗？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'OpenClaw 本身是开源免费的。你主要需要承担模型 API 调用费用，以及运行它的本地机器或云服务器成本。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: '这套教程适合新手吗？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '适合。教程按 7 天拆解，从部署、配置到技能和自动化，尽量用最少术语带你一步步搭起来。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'OpenClaw 支持哪些模型？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'OpenClaw 支持 Claude、OpenAI、Google Gemini、xAI Grok，以及通过 OpenRouter 接入的其他模型。',
+          },
+        },
+      ],
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${SITE_URL}/zh#tutorial-list`,
+      name: 'OpenClaw 7天学习路径',
+      numberOfItems: 7,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: '第 1 天：初识 OpenClaw',
+          url: `${SITE_URL}/zh/day/1`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: '第 2 天：10 分钟，搭建你的助手',
+          url: `${SITE_URL}/zh/day/2`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: '第 3 天：给助手一个灵魂',
+          url: `${SITE_URL}/zh/day/3`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: '第 4 天：接入你的数字生活',
+          url: `${SITE_URL}/zh/day/4`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: '第 5 天：解锁技能树',
+          url: `${SITE_URL}/zh/day/5`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          name: '第 6 天：让助手主动工作',
+          url: `${SITE_URL}/zh/day/6`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 7,
+          name: '第 7 天：进阶玩法 & 未来展望',
+          url: `${SITE_URL}/zh/day/7`,
+        },
+      ],
+    },
+  ],
 };
 
 export default function ZhHome() {
   return (
-    <main>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HomePage locale="zh" />
-    </main>
+    </>
   );
 }

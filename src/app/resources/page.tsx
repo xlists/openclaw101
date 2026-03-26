@@ -1,50 +1,34 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import ResourcesPage from '@/components/ResourcesPage';
+import {
+  SITE_NAME,
+  SITE_URL,
+  buildPageMetadata,
+  getStructuredDataLanguage,
+} from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Resource Hub',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-  alternates: {
-    canonical: 'https://openclaw101.dev/resources',
-    languages: {
-      'en': 'https://openclaw101.dev/resources',
-      'zh': 'https://openclaw101.dev/zh/resources',
-    },
-  },
-  openGraph: {
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-    type: 'website',
-    url: 'https://openclaw101.dev/resources',
-    siteName: 'OpenClaw 101',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Resource Hub - OpenClaw 101',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-    images: ['/og-image.png'],
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: 'OpenClaw Resource Hub',
+  description:
+    'Browse 35+ curated OpenClaw tutorials, deployment guides, videos, and integration resources from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, IBM, Codecademy, and more.',
+  locale: 'en',
+  enPath: '/resources',
+  zhPath: '/zh/resources',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Resource Hub - OpenClaw 101',
-  url: 'https://openclaw101.dev/resources',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-  inLanguage: 'en',
+  '@id': `${SITE_URL}/resources#collection`,
+  name: 'OpenClaw Resource Hub',
+  url: `${SITE_URL}/resources`,
+  description:
+    'Curated OpenClaw tutorials, deployment guides, videos, and integration resources in one place.',
+  inLanguage: getStructuredDataLanguage('en'),
   isPartOf: {
     '@type': 'WebSite',
-    name: 'OpenClaw 101',
-    url: 'https://openclaw101.dev',
+    name: SITE_NAME,
+    url: SITE_URL,
   },
 };
 

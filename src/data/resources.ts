@@ -95,7 +95,7 @@ export const resources: Resource[] = [
   },
   {
     title: 'GitHub — openclaw/openclaw',
-    desc: '源代码、Issue 跟踪和社区贡献指南 (312k+ ⭐)',
+    desc: '源代码、Issue 跟踪和社区贡献指南 (337k+ ⭐)',
     url: 'https://github.com/openclaw/openclaw',
     source: 'GitHub',
     lang: 'en',
@@ -4291,6 +4291,372 @@ export const resources: Resource[] = [
     category: 'getting-started',
     tags: ['香港', '繁體中文', '粵語', '技能包', '大灣區'],
   },
+  // ============ New — Week of 2026-03-16 ============
+  {
+    title: "OpenClaw Newsletter — 2026-03-14",
+    desc: "官方周刊：OpenClaw 超越 React 成为 GitHub Stars 第一项目，并汇总 Android 聊天设置改版、Homebrew 安装量与社区热点。",
+    url: "https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-03-14/",
+    source: "OpenClaw Newsletter",
+    lang: "en",
+    category: "official",
+    featured: true,
+    tags: ["官方周刊", "2026-03-14", "GitHub Stars", "社区动态"],
+  },
+
+  {
+    title: "How to Install OpenClaw (Moltbot/Clawdbot) on macOS, Windows, Linux, VPS, and Raspberry Pi",
+    desc: "全平台安装指南：覆盖 macOS、Linux、Windows WSL、DigitalOcean/Hetzner VPS 与树莓派，并附 Node.js、API Key、systemd 等前置要求。",
+    url: "https://anakin.ai/blog/how-to-install-openclaw-any-platform/",
+    source: "Anakin AI",
+    lang: "en",
+    category: "getting-started",
+    featured: true,
+    tags: ["全平台", "Windows WSL", "VPS", "Raspberry Pi"],
+  },
+
+  {
+    title: "阿里云百炼 — OpenClaw（原 Clawdbot、Moltbot）接入指南",
+    desc: "阿里云官方文档：通过百炼 OpenAI 兼容接口接入 OpenClaw，涵盖 Qwen/DeepSeek/Kimi 等模型、dashboard 配置和地域差异说明。",
+    url: "https://help.aliyun.com/zh/model-studio/openclaw",
+    source: "阿里云百炼",
+    lang: "zh",
+    category: "cloud-deploy",
+    featured: true,
+    tags: ["阿里云", "百炼", "Qwen", "模型配置"],
+  },
+
+  {
+    title: "B站 — 【Clawdbot/OpenClaw】超详细Windows下安全（基于WSL）安装指南",
+    desc: "Windows 安全部署视频：基于 WSL 跑通 OpenClaw，附本地 LLM / MiniMax 替换说明，适合想在 Windows 本机长期使用的用户。",
+    url: "https://www.bilibili.com/video/BV1SPFMzQErh/",
+    source: "Bilibili",
+    lang: "zh",
+    category: "video",
+    tags: ["B站", "Windows", "WSL", "安全部署"],
+  },
+
+  {
+    title: "B站 — 效率X10！我开源了一个 OpenClaw 的控制中心",
+    desc: "开源 OpenClaw 控制中心：集中查看多 Agent 状态、token 消耗、排队任务，以及每个 Agent 的人设、记忆和任务文档。",
+    url: "https://www.bilibili.com/video/BV1kDckzGEMm/",
+    source: "Bilibili",
+    lang: "zh",
+    category: "tools",
+    tags: ["B站", "控制中心", "多Agent", "可视化"],
+  },
+
+
+  // ============ New — Week of 2026-03-17 ============
+  {
+    title: 'GitHub Releases — OpenClaw v2026.3.13-1',
+    desc: '恢复版发布：修复 broken v2026.3.13 tag/release 路径，并汇总 live Chrome session attach 后续修复、Android chat settings 改版、OPENCLAW_TZ 时区支持等更新。',
+    url: 'https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1',
+    source: 'GitHub Releases',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['v2026.3.13-1', '版本更新', 'Chrome attach', 'Android'],
+  },
+  {
+    title: 'OpenClaw Newsletter — 2026-03-16',
+    desc: '官方周刊：OpenClaw 超越 React 成为 GitHub Stars 第一软件项目；Ollama 成为官方 provider；v2026.3.13 带来 live Chrome session attach 与 Android 聊天设置改版。',
+    url: 'https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-03-16/',
+    source: 'OpenClaw Newsletter',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['官方周刊', '2026-03-16', 'Ollama', 'Chrome attach'],
+  },
+  {
+    title: 'B站 — OpenClaw小龙虾保姆级安装教程！【Mac电脑版】小白10分钟搞定本地部署',
+    desc: '最新中文视频教程：聚焦 Mac 本地部署，适合第一次在个人电脑上跑通 OpenClaw 的新手，配套讲解常见接入场景。',
+    url: 'https://www.bilibili.com/video/BV1t4Psz1EmW/',
+    source: 'Bilibili',
+    lang: 'zh',
+    category: 'video',
+    tags: ['B站', 'Mac', '本地部署', '新手'],
+  },
+  {
+    title: 'B站 — OpenClaw (龙虾) Windows 本地部署保姆级教程',
+    desc: 'Windows 本机部署完整指南：从环境准备到跑通 OpenClaw 的保姆级演示，适合希望长期在 Windows 环境使用 OpenClaw 的用户。',
+    url: 'https://www.bilibili.com/video/BV1jscdzqEa8/',
+    source: 'Bilibili',
+    lang: 'zh',
+    category: 'video',
+    tags: ['B站', 'Windows', '本地部署', '保姆级'],
+  },
+  {
+    title: 'B站 —【保姆级】OpenClaw 全网最细教学：安装→Skills实战→多Agent协作，1 小时全精通！',
+    desc: '覆盖安装、Skills 实战与多 Agent 协作的近期中文长视频，适合想一次性建立完整使用心智的进阶新手。',
+    url: 'https://www.bilibili.com/video/BV1TpAZzeEiZ/',
+    source: 'Bilibili',
+    lang: 'zh',
+    category: 'video',
+    tags: ['B站', 'Skills', '多Agent', '长视频'],
+  },
+  {
+    title: 'Next Platform — OpenClaw 是 agentic AI 的“GPT 时代”类比？',
+    desc: '行业观点文章，讨论 OpenClaw 对 AI-agent 基础设施的影响与发展路径，附带行业讨论与市场观察。',
+    url: 'https://www.nextplatform.com/ai/2026/03/17/nvidia-says-openclaw-is-to-agentic-ai-what-gpt-was-to-chattybots/5209428',
+    source: 'The Next Platform',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: false,
+    tags: ['行业观点', 'agentic AI', '趋势观察'],
+  },
+  {
+    title: 'Reuters — 百度加入中国 OpenClaw 狂热浪潮',
+    desc: '路透社报道中国企业与厂商围绕 OpenClaw 的最新动态与本土化落地。',
+    url: 'https://www.reuters.com/business/media-telecom/baidu-joins-chinas-openclaw-frenzy-with-new-ai-agents-2026-03-17/',
+    source: 'Reuters',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: false,
+    tags: ['行业资讯', '本土化', '企业动作'],
+  },
+
+
+  // ============ New — Week of 2026-03-20 ============
+  {
+    title: 'YouTube — The only OpenClaw tutorial you\'ll ever need (March 2026)',
+    desc: '近期英文长视频教程：从搭建第一个 AI 员工到完整工作流配置，适合想一次性补齐安装与使用心智的用户。',
+    url: 'https://www.youtube.com/watch?v=CxErCGVo-oo',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    featured: true,
+    tags: ['YouTube', '完整教程', 'March 2026', '最新'],
+  },
+
+  {
+    title: 'Substack — OpenClaw News for Mar. 18/26',
+    desc: '最新社区情报汇总：聚合 3 月 18 日前后的 OpenClaw 新闻、版本动态与生态观察，适合快速补齐最近一周信息。',
+    url: 'https://pau1.substack.com/p/openclaw-news-for-mar-1826',
+    source: 'Substack',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['新闻汇总', '社区动态', 'March 2026', '最新'],
+  },
+
+  {
+    title: 'Substack — I Studied OpenClaw Memory System — Here\'s What I Found',
+    desc: '围绕 OpenClaw 记忆系统的最新分析：从长期记忆归属到上下文连续性，适合想深入理解 Memory 机制的用户。',
+    url: 'https://gaodalie.substack.com/p/i-studied-openclaw-memory-system',
+    source: 'Substack',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['记忆系统', 'Memory', 'Substack', 'March 2026'],
+  },
+
+  // ============ New — Week of 2026-03-21 ============
+  {
+    title: "YouTube — Install & Run OpenClaw on Raspberry Pi 5 | Zero Cost Local AI | Offline AI",
+    desc: "最新树莓派 5 视频教程：在本地离线环境部署 OpenClaw，主打零 API 成本和低门槛硬件方案。",
+    url: "https://www.youtube.com/watch?v=P2-ZeB7O0nA",
+    source: "YouTube",
+    lang: 'en',
+    category: 'video',
+    tags: ["YouTube", "Raspberry Pi 5", "离线部署", "零成本", "2026-03"],
+  },
+
+  {
+    title: "The OpenClaw Saga: How Two Weeks Changed the Agentic AI World Forever",
+    desc: "长文复盘 OpenClaw 在 2026 年 2 月的爆发式演进：品牌更名、基金会过渡、生态扩张与安全争议。",
+    url: "https://thesingularitypoint.substack.com/p/the-openclaw-saga-how-two-weeks-changed",
+    source: "Substack",
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ["Substack", "历史复盘", "生态演进", "安全争议", "2026-03"],
+  },
+
+  {
+    title: "B站 — OpenClaw 接入微信、QQ、飞书等教程！打造 24 小时在线 AI 助手！",
+    desc: "3 月最新中文视频教程：聚焦微信、QQ、飞书等国内平台接入，并演示 OpenClaw 的 24 小时在线助手玩法。",
+    url: "https://www.bilibili.com/video/BV1mcwtzVEnt/",
+    source: "Bilibili",
+    lang: 'zh',
+    category: 'video',
+    tags: ["B站", "微信", "QQ", "飞书", "国内平台", "2026-03"],
+  },
+
+  {
+    title: "B站 — OpenClaw 6 大必要配置推荐",
+    desc: "近期中文经验视频：总结安全、记忆、搜索、浏览器、Skills 与 Token 控制等 6 类高频配置建议。",
+    url: "https://www.bilibili.com/video/BV1G7PFz1E7x/",
+    source: "Bilibili",
+    lang: 'zh',
+    category: 'getting-started',
+    tags: ["B站", "配置优化", "安全", "Skills", "Token", "2026-03"],
+  },
+
+
+  // ============ New — Week of 2026-03-22 ============
+  {
+    title: 'Medium — OpenClaw: The Lobster That Took Over the AI World',
+    desc: '3 月新文回顾 OpenClaw 的爆发式增长，梳理其从 side project 到 GitHub 现象级项目的关键节点。',
+    url: 'https://thamizhelango.medium.com/openclaw-the-lobster-that-took-over-the-ai-world-7d901bc387bb',
+    source: 'Medium',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['增长', 'Medium', '现象级', '2026-03'],
+  },
+
+  {
+    title: 'Substack — The Sequence Opinion #827: Taming the Agentic Lobster: Learning from OpenClaw',
+    desc: 'The Sequence 最新评论：从 Agent 基础设施视角复盘 OpenClaw 的崛起，并总结可供团队借鉴的产品与安全启示。',
+    url: 'https://thesequence.substack.com/p/the-sequence-opinion-827-taming-the',
+    source: 'The Sequence',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['The Sequence', '行业评论', '安全启示', '2026-03'],
+  },
+
+
+  // ============ New — Week of 2026-03-24 ============
+  {
+    title: 'OpenClaw News for Mar. 22/26',
+    desc: '最新社区情报汇总：聚合最近一周 OpenClaw 新闻、版本动态与生态观察，适合快速补齐 March 下旬的更新。',
+    url: 'https://pau1.substack.com/p/openclaw-news-for-mar-2226',
+    source: 'Substack',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['新闻汇总', '社区动态', 'March 2026', '最新'],
+  },
+  {
+    title: 'Deploy OpenClaw with GLM 5: Self-Hosted AI Agent in 10 Min',
+    desc: '最新英文实操：用 GLM-5 在 10 分钟内跑起自托管 OpenClaw，覆盖安装、模型接入与快速启动。',
+    url: 'https://michielh.medium.com/deploy-openclaw-with-glm-5-self-hosted-ai-agent-in-10-min-7f6a8ed985d4',
+    source: 'Medium',
+    lang: 'en',
+    category: 'getting-started',
+    tags: ['GLM-5', '10分钟', '自托管', '2026-03'],
+  },
+  {
+    title: 'YouTube — 微信养龙虾：OpenClaw 微信插件 Clawbot 发布',
+    desc: '近期中文视频教程：演示如何把 OpenClaw 接入微信，一条命令完成插件安装与配对，适合想把 AI 助手装进微信的用户。',
+    url: 'https://www.youtube.com/watch?v=KZKT27Gk9lA',
+    source: 'YouTube',
+    lang: 'zh',
+    category: 'channel-integration',
+    tags: ['微信', '插件', '中文教程', 'YouTube', '2026-03'],
+  },
+
+  // ============ New — Week of 2026-03-24 ============
+
+  {
+    title: 'GitHub Releases — OpenClaw v2026.3.22',
+    desc: '3 月最新正式版发布：ClawHub 安装优先级改为优先技能市场、移除旧版 Chrome extension relay 路径，并带来新的 Matrix 插件、插件 SDK 迁移与多项安全收紧。',
+    url: 'https://github.com/openclaw/openclaw/releases/tag/v2026.3.22',
+    source: 'GitHub Releases',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['v2026.3.22', '版本更新', 'ClawHub', 'Matrix', 'Chrome MCP'],
+  },
+  {
+    title: 'OpenClaw Newsletter — 2026-03-24',
+    desc: '官方日报：汇总最新改名讨论、微信插件兼容性问题、v2026.3.23 / v2026.3.22 发版动态，以及插件超时保护与 WebChat 性能改进。',
+    url: 'https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-03-24/',
+    source: 'OpenClaw Newsletter',
+    lang: 'en',
+    category: 'official',
+    featured: true,
+    tags: ['官方周刊', '2026-03-24', '微信插件', 'v2026.3.23', 'WebChat'],
+  },
+  {
+    title: 'CNBC — OpenClaw 的“ChatGPT 时刻”引发模型商品化担忧',
+    desc: 'CNBC 3 月 21 日报道：OpenClaw 的爆发式增长让市场重新讨论底层模型是否会进一步商品化，以及 Agent 层的价值正在上移。',
+    url: 'https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html',
+    source: 'CNBC',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['CNBC', '行业分析', '模型商品化', '2026-03'],
+  },
+  {
+    title: 'YouTube — OpenClaw v2026.3.22：The Biggest Release Yet',
+    desc: '近期英文视频解读：聚焦 v2026.3.22 的 breaking changes、新功能、Bug 修复与安全加固，适合想快速掌握这次大版本变化的用户。',
+    url: 'https://www.youtube.com/watch?v=aAcWV5WcSXg',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', 'v2026.3.22', '版本解读', 'March 2026'],
+  },
+  {
+    title: 'B站 — [中配] 你唯一需要的 OpenClaw 教程（2026 年 3 月版）',
+    desc: '3 月较新的中文视频教程：从安装到工作流配置的完整 walkthrough，适合想一次补齐 OpenClaw 上手心智的中文用户。',
+    url: 'https://www.bilibili.com/video/BV1W3APzGEx5/',
+    source: 'Bilibili',
+    lang: 'zh',
+    category: 'video',
+    featured: true,
+    tags: ['B站', '中文教程', 'March 2026', '完整教程'],
+  },
+
+  // ============ New — Week of 2026-03-26 ============
+
+  {
+    title: 'The Biggest OpenClaw Update Just Dropped. Here Is Everything You Need to Know (March 2026)',
+    desc: '聚焦 v2026.3.22 的实战解读：ClawHub 成为默认技能市场、/btw 侧对话、子 Agent 模型与 thinking 调整、会话膨胀治理与 30+ 安全补丁。',
+    url: 'https://www.gauraw.com/openclaw-update-march-2026-clawhub-subagents-session-management/',
+    source: 'Gauraw',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['v2026.3.22', 'ClawHub', '子Agent', '会话管理', 'March 2026'],
+  },
+
+  {
+    title: 'OpenClaw 2026.3.13 Release: Memory Fix, Chrome DevTools, and Mobile Redesign',
+    desc: '版本解读：回顾 v2026.3.13 的内存回归修复、Chrome DevTools attach、新版 Android 设计、Docker 时区支持与 Windows Gateway 修复。',
+    url: 'https://openclawdc.com/blog/openclaw-3-13-release/',
+    source: 'OpenClaw DC',
+    lang: 'en',
+    category: 'official',
+    tags: ['v2026.3.13', 'memory fix', 'Chrome DevTools', 'Android', 'Windows Gateway'],
+  },
+
+  {
+    title: 'What’s New in OpenClaw (March 2026): Reliability Features',
+    desc: '从生产可用性视角解读 3 月更新：增强 cron、allowlist-first 渠道安全、配置校验与 openclaw doctor 诊断路径，更适合长期自动化运行。',
+    url: 'https://atlaslionclaw.com/blog/openclaw-march-2026-updates/',
+    source: 'Atlas Lion Claw',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['cron', 'reliability', 'allowlist', 'openclaw doctor', 'March 2026'],
+  },
+
+
+  // ============ New — Week of 2026-03-27 ============
+  {
+    title: "YouTube — OpenClaw Setup in 2026: The Only Guide You Need",
+    desc: "近一周内出现的英文新视频教程：覆盖安装 OpenClaw、连接模型 API Key、初始化工作区与 Dashboard，上手路径相对完整。",
+    url: "https://www.youtube.com/watch?v=9epvGKyHIek",
+    source: "YouTube",
+    lang: "en",
+    category: "video",
+    tags: ["YouTube", "setup", "March 2026", "完整教程"],
+  },
+
+  {
+    title: "Verdent — OpenClaw Setup Guide 2026: Install, Configure & Connect in 15 Min",
+    desc: "15 分钟上手指南：从 Node.js 22、API Key 到 provider 选择与多渠道连接，适合第一次部署 OpenClaw 的新用户。",
+    url: "https://www.verdent.ai/guides/openclaw-setup-guide-from-zero-to-ai-assistant",
+    source: "Verdent",
+    lang: "en",
+    category: "getting-started",
+    tags: ["快速上手", "安装指南", "provider", "2026-03"],
+  },
+
+  {
+    title: "Nimo PC — 2026 Guide: How to Install OpenClaw AI on Windows",
+    desc: "Windows 11 向导：聚焦 PowerShell 安装、Node.js / Git 前置依赖与本机环境准备，适合想在 Windows 侧跑通 OpenClaw 的用户。",
+    url: "https://www.nimopc.com/blogs/our-blog/2026-guide-how-to-install-openclaw-ai-on-windows",
+    source: "Nimo PC",
+    lang: "en",
+    category: "getting-started",
+    tags: ["Windows", "PowerShell", "安装指南", "2026-03"],
+  },
+
 ];
 
 export function getResourcesByCategory(cat: ResourceCategory): Resource[] {

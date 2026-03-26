@@ -1,85 +1,84 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 import DayContent from '@/components/DayContent';
+import { getDayContent, getDayStaticParams } from '@/lib/days';
+import {
+  SITE_NAME,
+  SITE_URL,
+  absoluteUrl,
+  buildPageMetadata,
+  getStructuredDataLanguage,
+} from '@/lib/seo';
 
 interface Props {
-  params: Promise<{ day: string }>;
-}
-
-const DAYS = [1, 2, 3, 4, 5, 6, 7];
-
-export async function generateStaticParams() {
-  return DAYS.map((day) => ({ day: day.toString() }));
-}
-
-function getDay(day: string): { content: string; frontmatter: any } | null {
-  const dayNum = parseInt(day);
-  if (!DAYS.includes(dayNum)) return null;
-  
-  const filePath = path.join(process.cwd(), 'content', 'days-en', `day${dayNum}.md`);
-  if (!fs.existsSync(filePath)) return null;
-  
-  const fileContent = fs.readFileSync(filePath, 'utf8');
-  const { data, content } = matter(fileContent);
-  return { content, frontmatter: data };
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { day } = await params;
-  const data = getDay(day);
-  if (!data) return { title: 'Not Found' };
-  
-  const dayNum = parseInt(day);
-  const titles: Record<number, { en: string; zh: string }> = {
-    1: { en: 'Meet OpenClaw', zh: '初识 OpenClaw' },
-    2: { en: 'Build Your Assistant in 10 Minutes', zh: '10 分钟，搭建你的助手' },
-    3: { en: 'Give Your Assistant a Soul', zh: '给助手一个灵魂' },
-    4: { en: 'Connect Your Digital Life', zh: '接入你的数字生活' },
-    5: { en: 'Unlock the Skill Tree', zh: '解锁技能树' },
-    6: { en: 'Make Your Assistant Work Proactively', zh: '让助手主动工作' },
-    7: { en: 'Advanced Techniques & Future Outlook', zh: '进阶玩法 & 未来展望' },
+  params: {
+    day: string;
   };
-  
-  const title = `Day ${dayNum}: ${titles[dayNum]?.en || ''} | OpenClaw 101`;
-  
-  return {
-    title,
+}
+
+export function generateStaticParams() {
+  return getDayStaticParams();
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const data = getDayContent('en', params.day);
+
+  if (!data) {
+    return {
+      title: 'Not Found',
+    };
+  }
+
+  return buildPageMetadata({
+    title: data.frontmatter.title,
     description: data.frontmatter.description,
-    alternates: {
-      canonical: `https://openclaw101.dev/day/${day}`,
-      languages: {
-        'en': `https://openclaw101.dev/day/${day}`,
-        'zh': `https://openclaw101.dev/zh/day/${day}`,
-      },
-    },
-    openGraph: {
-      title,
-      description: data.frontmatter.description,
-      type: 'article',
-      url: `https://openclaw101.dev/day/${day}`,
-    },
-  };
+    locale: 'en',
+    enPath: `/day/${params.day}`,
+    zhPath: `/zh/day/${params.day}`,
+    type: 'article',
+  });
 }
 
-export default async function DayPage({ params }: Props) {
-  const { day } = await params;
-  const data = getDay(day);
-  
+export default function DayPage({ params }: Props) {
+  const data = getDayContent('en', params.day);
+
   if (!data) {
     notFound();
   }
-  
-  const dayNum = parseInt(day);
-  const prevDay = dayNum > 1 ? dayNum - 1 : null;
-  const nextDay = dayNum < 7 ? dayNum + 1 : null;
-  
+
+  const dayNumber = Number(params.day);
+  const prevDay = dayNumber > 1 ? dayNumber - 1 : null;
+  const nextDay = dayNumber < 7 ? dayNumber + 1 : null;
+  const url = absoluteUrl(`/day/${params.day}`);
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    headline: data.frontmatter.title,
+    description: data.frontmatter.description,
+    url,
+    inLanguage: getStructuredDataLanguage('en'),
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    author: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    dateModified: data.lastModified,
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950">
-      <DayContent 
-        day={dayNum}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <DayContent
+        day={dayNumber}
         content={data.content}
         frontmatter={data.frontmatter}
         prevDay={prevDay}

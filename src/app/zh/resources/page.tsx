@@ -1,50 +1,33 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import ResourcesPage from '@/components/ResourcesPage';
+import {
+  SITE_NAME,
+  SITE_URL,
+  buildPageMetadata,
+  getStructuredDataLanguage,
+} from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: '全网资源聚合',
-  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-  alternates: {
-    canonical: 'https://openclaw101.dev/zh/resources',
-    languages: {
-      'en': 'https://openclaw101.dev/resources',
-      'zh': 'https://openclaw101.dev/zh/resources',
-    },
-  },
-  openGraph: {
-    title: '全网资源聚合',
-    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-    type: 'website',
-    url: 'https://openclaw101.dev/zh/resources',
-    siteName: 'OpenClaw 101',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: '全网资源聚合 - OpenClaw 101',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '全网资源聚合',
-    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-    images: ['/og-image.png'],
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: '全网 OpenClaw 资源聚合',
+  description:
+    '汇总 35+ 篇 OpenClaw 精选教程、部署指南、视频和平台接入资源，覆盖阿里云、腾讯云、DigitalOcean、B 站、IBM、Codecademy 等来源。',
+  locale: 'zh',
+  enPath: '/resources',
+  zhPath: '/zh/resources',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: '全网资源聚合 - OpenClaw 101',
-  url: 'https://openclaw101.dev/zh/resources',
-  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-  inLanguage: 'zh-CN',
+  '@id': `${SITE_URL}/zh/resources#collection`,
+  name: '全网 OpenClaw 资源聚合',
+  url: `${SITE_URL}/zh/resources`,
+  description: '一站式收录 OpenClaw 教程、部署指南、视频与接入资源。',
+  inLanguage: getStructuredDataLanguage('zh'),
   isPartOf: {
     '@type': 'WebSite',
-    name: 'OpenClaw 101',
-    url: 'https://openclaw101.dev',
+    name: SITE_NAME,
+    url: SITE_URL,
   },
 };
 

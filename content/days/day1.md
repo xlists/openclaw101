@@ -1,7 +1,7 @@
 ---
-title: "Day 1: 初识 OpenClaw"
+title: "第 1 天：初识 OpenClaw"
 day: 1
-description: "OpenClaw 7天教程 - Day 1: 初识 OpenClaw"
+description: "OpenClaw 7天教程 - 第 1 天：初识 OpenClaw"
 ---
 
 > *"我不是 Siri，不是 ChatGPT，不是任何你用过的 AI。我是小墨——一只住在服务器里的黑猫，而我能帮你做的事，可能会让你重新定义'助手'这个词。"*

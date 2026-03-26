@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# AI Search Engines - Welcome!
 User-agent: GPTBot
 Allow: /
 

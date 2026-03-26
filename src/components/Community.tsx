@@ -33,7 +33,7 @@ const itemsZh = [
   {
     icon: '📦',
     title: 'OpenClaw GitHub',
-    desc: 'OpenClaw 主仓库源码 (312k+ ⭐) 和社区贡献',
+    desc: 'OpenClaw 主仓库源码 (337k+ ⭐) 和社区贡献',
     link: 'https://github.com/openclaw/openclaw',
     color: 'hover:border-gray-400 hover:bg-gray-50',
   },
@@ -78,7 +78,7 @@ const itemsEn = [
   {
     icon: '📦',
     title: 'OpenClaw GitHub',
-    desc: 'OpenClaw main repo source code (312k+ ⭐) and community contributions',
+    desc: 'OpenClaw main repo source code (337k+ ⭐) and community contributions',
     link: 'https://github.com/openclaw/openclaw',
     color: 'hover:border-gray-400 hover:bg-gray-50',
   },
