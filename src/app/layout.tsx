@@ -9,7 +9,7 @@ import {
 } from '@/lib/seo';
 
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
-const CURRENT_SKILLS_COUNT = '5200+';
+const CURRENT_SKILLS_COUNT = '5400+';
 
 const siteMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),

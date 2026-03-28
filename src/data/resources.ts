@@ -95,7 +95,7 @@ export const resources: Resource[] = [
   },
   {
     title: 'GitHub — openclaw/openclaw',
-    desc: '源代码、Issue 跟踪和社区贡献指南 (338k+ ⭐)',
+    desc: '源代码、Issue 跟踪和社区贡献指南 (339k+ ⭐)',
     url: 'https://github.com/openclaw/openclaw',
     source: 'GitHub',
     lang: 'en',
@@ -4676,6 +4676,34 @@ export const resources: Resource[] = [
     lang: 'en',
     category: 'use-cases',
     tags: ['YouTube', '5个用例', '记忆系统', '自动化', '2026-03'],
+  },
+  // ============ New — Week of 2026-03-29 ============
+  {
+    title: 'Skywork — OpenClaw Explained: The Ultimate 2026 Guide to Your Autonomous AI Assistant',
+    desc: '近期长文综述：从 OpenClaw 的生态、部署路径、成本到安全姿势，适合需要一篇文章快速建立全局认知的用户。',
+    url: 'https://skywork.ai/skypage/en/openclaw-autonomous-ai-guide/2036382738959405056',
+    source: 'Skywork',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['全景综述', '部署', '成本', '安全', '2026-03'],
+  },
+  {
+    title: 'YouTube — Ubuntu OpenClaw Setup: From Zero to Running | 2026 | Full Guide',
+    desc: '面向 Ubuntu 用户的最新视频教程：从零开始安装 OpenClaw，覆盖基础环境准备、启动与首次跑通流程。',
+    url: 'https://www.youtube.com/watch?v=hvMoz3hRybk',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', 'Ubuntu', '安装教程', '2026-03'],
+  },
+  {
+    title: 'YouTube — OpenClaw\'s new update is MASSIVE',
+    desc: '近期英文版本解读视频：聚焦 OpenClaw 新版功能变化与升级重点，适合快速了解最近一次更新的用户。',
+    url: 'https://www.youtube.com/watch?v=LaHXmRE-_fs',
+    source: 'YouTube',
+    lang: 'en',
+    category: 'video',
+    tags: ['YouTube', '版本解读', '更新', '2026-03'],
   },
 ];
 

@@ -334,7 +334,7 @@ export default function Skills({ locale, dict }: SkillsProps) {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full mb-4">
             <span className="text-2xl">🚀</span>
             <span className="text-sm font-semibold text-primary">
-              {isZh ? '5200+ 社区技能' : '5200+ Community Skills'}
+              {isZh ? '5400+ 社区技能' : '5400+ Community Skills'}
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -391,7 +391,7 @@ export default function Skills({ locale, dict }: SkillsProps) {
         <div className="reveal bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-8">
           <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
             <div className="bg-white/60 rounded-lg p-3 sm:p-4">
-              <div className="text-xl sm:text-3xl font-bold text-primary">5200+</div>
+              <div className="text-xl sm:text-3xl font-bold text-primary">5400+</div>
               <div className="text-[10px] sm:text-sm text-gray-500">{isZh ? '总技能数' : 'Total Skills'}</div>
             </div>
             <div className="bg-white/60 rounded-lg p-3 sm:p-4">

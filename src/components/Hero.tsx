@@ -94,7 +94,7 @@ export default function Hero({ locale, dict }: HeroProps) {
             <div className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>{isZh ? '学习路径' : 'Learning Path'}</div>
           </div>
           <div className="text-center">
-            <div className="text-xl font-bold" style={{ color: '#fff' }}>338k+</div>
+            <div className="text-xl font-bold" style={{ color: '#fff' }}>339k+</div>
             <div className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>OpenClaw Stars</div>
           </div>
           <div className="text-center">
@@ -116,7 +116,7 @@ export default function Hero({ locale, dict }: HeroProps) {
           </div>
           <div className="w-px h-8" style={{ background: 'rgba(255,255,255,0.1)' }} />
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold" style={{ color: '#fff' }}>338k+</div>
+            <div className="text-2xl md:text-3xl font-bold" style={{ color: '#fff' }}>339k+</div>
             <div className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>OpenClaw Stars</div>
           </div>
           <div className="w-px h-8" style={{ background: 'rgba(255,255,255,0.1)' }} />
